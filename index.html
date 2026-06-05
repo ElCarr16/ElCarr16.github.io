@@ -7,7 +7,6 @@
     <title>Perahu Jeans - Fashion Outlet</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +17,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg bg-white sticky-top py-3 header-nav">
         <div class="container">
 
@@ -30,49 +28,127 @@
                 </div>
             </a>
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="d-flex align-items-center gap-3 d-lg-none ms-auto me-2">
+                <a href="#" class="nav-icon-link position-relative">
+                    <i class="bi bi-bag"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                </a>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#ecommerceNavbar" aria-controls="ecommerceNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="ecommerceNavbar">
+
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-2 ms-lg-3 align-items-lg-center">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link dropdown-toggle fw-semibold text-dark" href="#" id="kategoriDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kategori
                         </a>
-                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-lg-2" aria-labelledby="kategoriDropdown">
+                            <li><a class="dropdown-item" href="#">Celana Jeans Pria</a></li>
+                            <li><a class="dropdown-item" href="#">Celana Jeans Wanita</a></li>
+                            <li><a class="dropdown-item" href="#">Jaket Denim</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Koleksi Terbaru</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wanita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-medium lh-sm" href="#">Promo Hari Ini</a>
                     </li>
                 </ul>
 
-                <form class="d-flex search-box" role="search">
-                    <input class="form-control" type="search" placeholder="Cari pakaian..." aria-label="Search">
+                <form class="d-flex search-box flex-grow-1 mx-lg-4 my-2 my-lg-0" role="search">
+                    <input class="form-control" type="search" placeholder="Cari jeans, jaket, atau kemeja..."
+                        aria-label="Search">
                     <button class="btn btn-search" type="submit">
                         <i class="bi bi-search"></i>
                     </button>
                 </form>
-            </div>
 
+                <div class="d-none d-lg-flex align-items-center gap-3 ecommerce-actions ms-auto">
+                    <a href="#" class="nav-icon-link text-secondary d-flex p-2" title="Favorit">
+                        <i class="bi bi-heart"></i>
+                    </a>
+
+                    <a href="#" class="nav-icon-link text-secondary position-relative d-flex p-2" title="Keranjang">
+                        <i class="bi bi-bag"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white">
+                            3
+                        </span>
+                    </a>
+
+                    <div class="vr text-black-50 opacity-25 my-auto mx-2" style="height: 20px;"></div>
+
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center gap-2 text-decoration-none text-dark dropdown-toggle cursor-pointer ps-2"
+                            href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-5 text-secondary"></i>
+                            <span class="fs-6 fw-medium d-none d-xl-inline">Akun Saya</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm mt-lg-2"
+                            aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-list-task me-2"></i>Transaksi</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Pengaturan</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#"><i
+                                        class="bi bi-box-arrow-right me-2"></i>Keluar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3 d-lg-none mt-3 pt-3 border-top">
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-3">
+                        <i class="bi bi-heart fs-5"></i> Wishlist Favorit
+                    </a>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-3">
+                        <i class="bi bi-person fs-5"></i> Profil Akun Saya
+                    </a>
+                </div>
+
+            </div>
         </div>
     </nav>
 
     <main class="container my-4">
-        <div class="banner-wrapper overflow-hidden rounded-4 shadow-sm">
-            <img src="img/banner.png" class="img-fluid w-100 d-block" alt="Promo Banner">
+        <div class="main-banner position-relative overflow-hidden rounded-4 shadow-sm d-flex align-items-center">
+
+            <div class="banner-bg-image" style="background-image: url('img/banner.png');"></div>
+
+            <div class="banner-overlay"></div>
+
+            <div class="banner-content position-relative z-1 text-white p-4 p-md-5">
+                <span class="badge bg-danger text-uppercase mb-3 px-3 py-2 tracking-wider">Mid Year Sale</span>
+                <h2 class="display-5 fw-bold mb-2">Upgrade Your Daily Wear</h2>
+                <p class="lead mb-4 text-white-50">Dapatkan koleksi denim terbaik dengan kenyamanan maksimal dan
+                    potongan harga hingga 50%.</p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#" class="btn btn-light btn-lg px-4 fw-bold text-dark rounded-pill shadow-sm">
+                        Shop Collection <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                        See Catalog
+                    </a>
+                </div>
+            </div>
+
         </div>
     </main>
 
