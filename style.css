@@ -130,6 +130,7 @@ body {
 
 
 /* ==========================================================================
+/* ==========================================================================
    4. PRODUCT CATALOG SECTION (GRID & CARDS)
    ========================================================================== */
 .product-card {
@@ -138,19 +139,28 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Pembungkus Gambar Produk & Hover Effect */
+/* 1. PEMBUNGKUS GAMBAR (CONTAINER) */
 .product-img-wrapper {
-    aspect-ratio: 3 / 4;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;       
+    overflow: hidden;
+    background-color: #f8fafc;  
+    border-radius: 12px;       
 }
 
+/* 2. TAG GAMBAR (IMAGE ASSET) */
 .product-img {
-    height: 100%;
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;   /* <--- Paksa tinggi penuh untuk mengaktifkan cover */
+    object-fit: cover !important; /* <--- Paksa gambar memotong penuh ruang 1:1 */
+    object-position: top center; /* <--- Fokus potongan di area atas/tengah (pas untuk celana/baju) */
     transition: transform 0.5s ease;
 }
 
+/* Efek Zoom Halus saat Kartu Di-hover */
 .product-card:hover .product-img {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 /* Tombol Wishlist di Atas Gambar */
