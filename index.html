@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -17,11 +17,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white sticky-top py-3 header-nav">
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top py-3 header-nav" aria-label="Navigasi Utama">
         <div class="container">
 
             <a class="navbar-brand d-flex align-items-center gap-3" href="#">
-                <img src="img/logo.png" id="logo" alt="Logo Perahu Jeans">
+                <img src="img/logo.png" id="logo" alt="Logo Perahu Jeans" loading="lazy">
                 <div class="brand-text">
                     <h1 class="brand-title m-0">Perahu Jeans</h1>
                     <span class="brand-subtitle text-uppercase">fashion outlet</span>
@@ -29,7 +31,7 @@
             </a>
 
             <div class="d-flex align-items-center gap-3 d-lg-none ms-auto me-2">
-                <a href="#" class="nav-icon-link position-relative">
+                <a href="#" class="nav-icon-link position-relative" aria-label="Keranjang Belanja">
                     <i class="bi bi-bag"></i>
                     <span
                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
@@ -60,12 +62,8 @@
                             <li><a class="dropdown-item" href="#">Koleksi Terbaru</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Wanita</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Wanita</a></li>
                     <li class="nav-item">
                         <a class="nav-link text-danger fw-medium lh-sm" href="#">Promo Hari Ini</a>
                     </li>
@@ -73,23 +71,23 @@
 
                 <form class="d-flex search-box flex-grow-1 mx-lg-4 my-2 my-lg-0" role="search">
                     <input class="form-control" type="search" placeholder="Cari jeans, jaket, atau kemeja..."
-                        aria-label="Search">
-                    <button class="btn btn-search" type="submit">
+                        aria-label="Cari produk">
+                    <button class="btn btn-search" type="submit" aria-label="Submit cari">
                         <i class="bi bi-search"></i>
                     </button>
                 </form>
 
                 <div class="d-none d-lg-flex align-items-center gap-3 ecommerce-actions ms-auto">
-                    <a href="#" class="nav-icon-link text-secondary d-flex p-2" title="Favorit">
+                    <a href="#" class="nav-icon-link text-secondary d-flex p-2" title="Favorit"
+                        aria-label="Lihat Favorit">
                         <i class="bi bi-heart"></i>
                     </a>
 
-                    <a href="#" class="nav-icon-link text-secondary position-relative d-flex p-2" title="Keranjang">
+                    <a href="#" class="nav-icon-link text-secondary position-relative d-flex p-2" title="Keranjang"
+                        aria-label="Lihat Keranjang">
                         <i class="bi bi-bag"></i>
                         <span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white">
-                            3
-                        </span>
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white">3</span>
                     </a>
 
                     <div class="vr text-black-50 opacity-25 my-auto mx-2" style="height: 20px;"></div>
@@ -125,32 +123,273 @@
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
 
-    <main class="container my-4">
-        <div class="main-banner position-relative overflow-hidden rounded-4 shadow-sm d-flex align-items-center">
+    <main>
+    <!-- banner start -->
+        <section class="container my-4" aria-label="Promosi Utama">
+            <div class="main-banner position-relative overflow-hidden rounded-4 shadow-sm d-flex align-items-center">
+                <div class="banner-bg-image" style="background-image: url('img/banner.png');"></div>
+                <div class="banner-overlay"></div>
+                <div class="banner-content position-relative z-1 text-white p-4 p-md-5">
+                    <span class="badge bg-danger text-uppercase mb-3 px-3 py-2 tracking-wider">Mid Year Sale</span>
+                    <h2 class="display-5 fw-bold mb-2">Upgrade Your Daily Wear</h2>
+                    <p class="lead mb-4 text-white-50">Dapatkan koleksi denim terbaik dengan kenyamanan maksimal dan
+                        potongan harga hingga 50%.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-light btn-lg px-4 fw-bold text-dark rounded-pill shadow-sm">
+                            Shop Collection <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                            See Catalog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- banner end -->
 
-            <div class="banner-bg-image" style="background-image: url('img/banner.png');"></div>
+    <!-- catalog start -->
+        <section class="container pb-5" aria-label="Katalog Produk">
 
-            <div class="banner-overlay"></div>
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4 bg-white p-3 rounded-3 shadow-sm border border-light">
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-dark rounded-2 px-3 fw-medium d-flex align-items-center gap-2"
+                        aria-label="Buka filter">
+                        <i class="bi bi-sliders"></i> Filter
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle rounded-2" type="button"
+                            data-bs-toggle="dropdown">Gender</button>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="#">Pria</a></li>
+                            <li><a class="dropdown-item" href="#">Wanita</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle rounded-2" type="button"
+                            data-bs-toggle="dropdown">Harga</button>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="#">Terendah - Tertinggi</a></li>
+                            <li><a class="dropdown-item" href="#">Tertinggi - Terendah</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle rounded-2" type="button"
+                            data-bs-toggle="dropdown">Warna</button>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="#">Blue Denim</a></li>
+                            <li><a class="dropdown-item" href="#">Black Denim</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="banner-content position-relative z-1 text-white p-4 p-md-5">
-                <span class="badge bg-danger text-uppercase mb-3 px-3 py-2 tracking-wider">Mid Year Sale</span>
-                <h2 class="display-5 fw-bold mb-2">Upgrade Your Daily Wear</h2>
-                <p class="lead mb-4 text-white-50">Dapatkan koleksi denim terbaik dengan kenyamanan maksimal dan
-                    potongan harga hingga 50%.</p>
-
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="#" class="btn btn-light btn-lg px-4 fw-bold text-dark rounded-pill shadow-sm">
-                        Shop Collection <i class="bi bi-arrow-right ms-2"></i>
-                    </a>
-                    <a href="#" class="btn btn-outline-light btn-lg px-4 rounded-pill">
-                        See Catalog
-                    </a>
+                <div class="d-flex align-items-center gap-2 ms-auto">
+                    <span class="text-secondary fs-7">Berdasarkan:</span>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle rounded-2 fw-medium" type="button"
+                            data-bs-toggle="dropdown">Terbaru</button>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="#">Terbaru</a></li>
+                            <li><a class="dropdown-item" href="#">Populer</a></li>
+                            <li><a class="dropdown-item" href="#">Diskon</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-        </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-md-4">
+
+                <div class="col">
+                    <article class="product-card">
+                        <div class="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3 bg-light">
+                            <img src="img/produk1.jpg" class="product-img w-100" alt="Slim Fit Denim Blue"
+                                loading="lazy">
+                            <button class="wishlist-btn" title="Tambah ke Favorit" aria-label="Tambah ke Favorit">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="color-swatch active" style="background-color: #2b3e50;"
+                                title="Navy Blue"></span>
+                            <span class="color-swatch" style="background-color: #1c1c1c;" title="Charcoal Black"></span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title m-0 text-uppercase">Slim Fit Denim Blue</h3>
+                            <p class="product-category text-secondary m-0">Celana · Slim Fit</p>
+                            <div class="d-flex align-items-center gap-1 my-1">
+                                <i class="bi bi-star-fill text-warning fs-7"></i>
+                                <span class="fs-7 fw-medium text-dark">4.8</span>
+                            </div>
+                            <p class="product-price fw-bold m-0 text-dark">Rp 429.000</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <div class="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3 bg-light">
+                            <img src="img/produk2.jpg" class="product-img w-100" alt="Oversize Denim Jacket"
+                                loading="lazy">
+                            <button class="wishlist-btn" title="Tambah ke Favorit" aria-label="Tambah ke Favorit">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="color-swatch active" style="background-color: #5c768d;"
+                                title="Light Blue"></span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title m-0 text-uppercase">Oversize Denim Jacket</h3>
+                            <p class="product-category text-secondary m-0">Pakaian Luar · Jaket</p>
+                            <div class="d-flex align-items-center gap-1 my-1">
+                                <i class="bi bi-star-fill text-warning fs-7"></i>
+                                <span class="fs-7 fw-medium text-dark">4.9</span>
+                            </div>
+                            <p class="product-price fw-bold m-0 text-dark">Rp 599.000</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <div class="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3 bg-light">
+                            <img src="img/produk3.jpg" class="product-img w-100" alt="Relaxed Tapered Jeans"
+                                loading="lazy">
+                            <button class="wishlist-btn" title="Tambah ke Favorit" aria-label="Tambah ke Favorit">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="color-swatch active" style="background-color: #1a2530;"
+                                title="Dark Indigo"></span>
+                            <span class="color-swatch" style="background-color: #7d8b99;" title="Washed Gray"></span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title m-0 text-uppercase">Relaxed Tapered Jeans</h3>
+                            <p class="product-category text-secondary m-0">Celana · Tapered</p>
+                            <div class="d-flex align-items-center gap-1 my-1">
+                                <i class="bi bi-star-fill text-warning fs-7"></i>
+                                <span class="fs-7 fw-medium text-dark">4.7</span>
+                            </div>
+                            <p class="product-price fw-bold m-0 text-dark">Rp 459.000</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <div class="product-img-wrapper position-relative overflow-hidden rounded-3 mb-3 bg-light">
+                            <img src="img/produk4.jpg" class="product-img w-100" alt="Classic Denim Shirt"
+                                loading="lazy">
+                            <button class="wishlist-btn" title="Tambah ke Favorit" aria-label="Tambah ke Favorit">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="color-swatch active" style="background-color: #4b6584;"
+                                title="Classic Blue"></span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title m-0 text-uppercase">Classic Denim Shirt</h3>
+                            <p class="product-category text-secondary m-0">Atasan · Kemeja</p>
+                            <div class="d-flex align-items-center gap-1 my-1">
+                                <i class="bi bi-star-fill text-warning fs-7"></i>
+                                <span class="fs-7 fw-medium text-dark">4.6</span>
+                            </div>
+                            <p class="product-price fw-bold m-0 text-dark">Rp 379.000</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+            <!-- catalog end -->
     </main>
+
+    <!-- footer start -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-uppercase fw-bold mb-3 tracking-wider">Perahu Jeans</h5>
+                    <p class="text-white-50 small lh-base mb-4">
+                        Penyedia pakaian denim berkualitas tinggi sejak tahun 2026. Kami menghadirkan kenyamanan, daya
+                        tahan, dan tren fashion jeans terbaik untuk gaya harianmu.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-sosmed-link" title="Instagram" aria-label="Ikuti Instagram Kami"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-sosmed-link" title="TikTok" aria-label="Ikuti TikTok Kami"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="#" class="footer-sosmed-link" title="Facebook" aria-label="Ikuti Facebook Kami"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-sosmed-link" title="Youtube" aria-label="Langganan Youtube Kami"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Belanja</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Koleksi Pria</a></li>
+                        <li><a href="#">Koleksi Wanita</a></li>
+                        <li><a href="#">Jaket Denim</a></li>
+                        <li><a href="#">Produk Terbaru</a></li>
+                        <li><a href="#" class="text-danger">Diskon & Promo</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Bantuan</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Hubungi Kami</a></li>
+                        <li><a href="#">Lacak Pesanan</a></li>
+                        <li><a href="#">Cara Pengembalian</a></li>
+                        <li><a href="#">FAQ (Tanya Jawab)</a></li>
+                        <li><a href="#">Panduan Ukuran</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Tetap Terhubung</h6>
+                    <p class="text-white-50 small mb-3">Dapatkan info produk terbaru dan voucher diskon eksklusif
+                        langsung di email kamu.</p>
+                    <form class="input-group footer-newsletter" role="presentation">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary"
+                            placeholder="Masukkan email kamu..." aria-label="Alamat email untuk newsletter">
+                        <button class="btn btn-light fw-medium px-3" type="button">Daftar</button>
+                    </form>
+                    <div class="mt-4">
+                        <p class="small text-white-50 mb-2">Metode Pembayaran Aman:</p>
+                        <div class="d-flex gap-2 text-white-50 fs-4">
+                            <i class="bi bi-credit-card" title="Transfer Bank / Kartu Kredit"></i>
+                            <i class="bi bi-wallet2" title="E-Wallet"></i>
+                            <i class="bi bi-truck" title="COD (Bayar di Tempat)"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary opacity-25 my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="small text-white-50 m-0">&copy; 2026 Perahu Jeans. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 small text-white-50">
+                        <a href="#" class="text-decoration-none text-white-50 footer-sublink">Syarat & Ketentuan</a>
+                        <a href="#" class="text-decoration-none text-white-50 footer-sublink">Kebijakan Privasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
