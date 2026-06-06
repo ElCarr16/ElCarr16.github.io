@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perahu Jeans - Fashion Outlet</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top py-3 header-nav" aria-label="Navigasi Utama">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <img src="img/logo.png" id="logo" alt="Logo Perahu Jeans" loading="lazy">
+                <div class="brand-text">
+                    <h1 class="brand-title m-0">Perahu Jeans</h1>
+                    <span class="brand-subtitle text-uppercase">fashion outlet</span>
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center gap-3 d-lg-none ms-auto me-2">
+                <a href="#" class="nav-icon-link position-relative" aria-label="Keranjang Belanja">
+                    <i class="bi bi-bag"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                </a>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#ecommerceNavbar" aria-controls="ecommerceNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ecommerceNavbar">
+
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-2 ms-lg-3 align-items-lg-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold text-dark" href="#" id="kategoriDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalog
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-lg-2" aria-labelledby="kategoriDropdown">
+                            <li><a class="dropdown-item" href="#">Mans Outfit</a></li>
+                            <li><a class="dropdown-item" href="#">Ladies outfit</a></li>
+                            <li><a class="dropdown-item" href="#">Kids Outfits</a></li>
+                            <li><a class="dropdown-item" href="#">Other Collection</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Koleksi Terbaru</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ladies</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-medium lh-sm" href="#">Promo Hari Ini</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex search-box flex-grow-1 mx-lg-4 my-2 my-lg-0" role="search">
+                    <input class="form-control" type="search" placeholder="Search..." aria-label="Cari produk">
+                    <button class="btn btn-search" type="submit" aria-label="Submit cari">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <div class="d-none d-lg-flex align-items-center gap-3 ecommerce-actions ms-auto">
+                    <a href="#" class="nav-icon-link text-secondary d-flex p-2" title="Favorit"
+                        aria-label="Lihat Favorit">
+                        <i class="bi bi-heart"></i>
+                    </a>
+
+                    <a href="cart.html" class="nav-icon-link text-secondary position-relative d-flex p-2"
+                        title="Keranjang" aria-label="Lihat Keranjang">
+                        <i class="bi bi-bag"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white">3</span>
+                    </a>
+
+                    <div class="vr text-black-50 opacity-25 my-auto mx-2" style="height: 20px;"></div>
+
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center gap-2 text-decoration-none text-dark dropdown-toggle cursor-pointer ps-2"
+                            href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-5 text-secondary"></i>
+                            <span class="fs-6 fw-medium d-none d-xl-inline">Akun Saya</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm mt-lg-2"
+                            aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-list-task me-2"></i>Transaksi</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Pengaturan</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-box-arrow-right me-2 text-danger"></i>
+                                    Keluar
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-person-fill-add text-success"></i>
+                                    Sign Up
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-person-fill text-info"></i> Sign in
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3 d-lg-none mt-3 pt-3 border-top">
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-3">
+                        <i class="bi bi-heart fs-5"></i> Wishlist Favorit
+                    </a>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-3">
+                        <i class="bi bi-person fs-5"></i> Profil Akun Saya
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Cart Start -->
+    <div class="container py-4">
+        <div class="row g-4">
+
+            <div class="col-lg-8">
+
+                <div
+                    class="d-flex justify-content-between align-items-center bg-white p-3 mb-3 rounded-3 shadow-sm border border-light-subtle">
+                    <div class="form-check m-0">
+                        <input class="form-check-input shadow-none border-secondary-subtle" type="checkbox"
+                            id="selectAllItems">
+                        <label class="form-check-label fw-bold text-dark ms-2 cursor-pointer" for="selectAllItems">
+                            Pilih Semua (5 Produk)
+                        </label>
+                    </div>
+                    <button class="btn btn-link text-danger text-decoration-none fw-bold p-0 small">Hapus</button>
+                </div>
+
+                <div class="bg-white p-3 rounded-3 shadow-sm border border-light-subtle mb-4">
+
+                    <div class="d-flex align-items-center mb-3 pb-3 border-bottom border-light-subtle">
+                        <input class="form-check-input shadow-none border-secondary-subtle me-3" type="checkbox"
+                            id="checkShop">
+                        <span class="badge bg-danger-subtle text-danger me-2 fw-bold px-2 py-1 fs-8">Official
+                            Store</span>
+                        <label for="checkShop" class="fw-bold text-dark m-0 cursor-pointer">Perahu Jeans Outlet</label>
+                    </div>
+
+                    <div class="row g-3 py-3 border-bottom border-light-subtle align-items-center">
+                        <div class="col-auto d-flex align-items-center">
+                            <input class="form-check-input shadow-none border-secondary-subtle me-3" type="checkbox">
+                            <img src="img/Remix Celana Pendek Bermuda  Cargo Mans.webp" alt="Remix Celana Pendek Bermuda  Cargo Mans" class="rounded-3 object-fit-cover"
+                                style="width: 75px; height: 75px;">
+                        </div>
+                        <div class="col flex-grow-1 ps-md-3">
+                            <h6 class="text-dark fw-medium m-0 text-truncate-2">Remix Celana Pendek Bermuda  Cargo Mans</h6>
+                            <p class="text-secondary small m-0 mt-1">Varian: Standard</p>
+                            <div class="fw-bold text-dark d-block d-md-none mt-2">Rp. 129.000</div>
+                        </div>
+                        <div
+                            class="col-12 col-md-auto d-flex flex-row flex-md-column justify-content-between align-items-center align-items-md-end ms-md-auto gap-2">
+                            <div class="fw-bold text-dark d-none d-md-block fs-5">Rp. 129.000</div>
+
+                            <div
+                                class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-md-end mt-md-2">
+                                <div class="d-flex gap-3 text-secondary fs-5">
+                                    <a href="#" class="text-secondary-emphasis" title="Tambah ke Favorit"><i
+                                            class="bi bi-heart"></i></a>
+                                    <a href="#" class="text-secondary-emphasis" title="Hapus dari Keranjang"><i
+                                            class="bi bi-trash3"></i></a>
+                                </div>
+                                <div class="input-group border border-secondary-subtle rounded-2 overflow-hidden"
+                                    style="width: 105px; height: 30px;">
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-minus-lg fs-7"></i></button>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center border-0 bg-transparent fw-bold p-0 text-dark small"
+                                        value="1" readonly>
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-plus-lg fs-7"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 py-3 border-bottom border-light-subtle align-items-center">
+                        <div class="col-auto d-flex align-items-center">
+                            <input class="form-check-input shadow-none border-secondary-subtle me-3" type="checkbox">
+                            <img src="img/product-2.jpg" alt="Colorful Stylish Shirt" class="rounded-3 object-fit-cover"
+                                style="width: 75px; height: 75px;">
+                        </div>
+                        <div class="col flex-grow-1 ps-md-3">
+                            <h6 class="text-dark fw-medium m-0 text-truncate-2">Colorful Stylish Shirt</h6>
+                            <p class="text-secondary small m-0 mt-1">Varian: Standard</p>
+                            <div class="fw-bold text-dark d-block d-md-none mt-2">Rp. 100.000</div>
+                        </div>
+                        <div
+                            class="col-12 col-md-auto d-flex flex-row flex-md-column justify-content-between align-items-center align-items-md-end ms-md-auto gap-2">
+                            <div class="fw-bold text-dark d-none d-md-block fs-5">Rp. 100.000</div>
+                            <div
+                                class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-md-end mt-md-2">
+                                <div class="d-flex gap-3 text-secondary fs-5">
+                                    <a href="#" class="text-secondary-emphasis" title="Tambah ke Favorit"><i
+                                            class="bi bi-heart"></i></a>
+                                    <a href="#" class="text-secondary-emphasis" title="Hapus dari Keranjang"><i
+                                            class="bi bi-trash3"></i></a>
+                                </div>
+                                <div class="input-group border border-secondary-subtle rounded-2 overflow-hidden"
+                                    style="width: 105px; height: 30px;">
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-minus-lg fs-7"></i></button>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center border-0 bg-transparent fw-bold p-0 text-dark small"
+                                        value="1" readonly>
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-plus-lg fs-7"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 py-3 border-bottom border-light-subtle align-items-center">
+                        <div class="col-auto d-flex align-items-center">
+                            <input class="form-check-input shadow-none border-secondary-subtle me-3" type="checkbox">
+                            <img src="img/product-3.jpg" alt="Colorful Stylish Shirt" class="rounded-3 object-fit-cover"
+                                style="width: 75px; height: 75px;">
+                        </div>
+                        <div class="col flex-grow-1 ps-md-3">
+                            <h6 class="text-dark fw-medium m-0 text-truncate-2">Colorful Stylish Shirt</h6>
+                            <p class="text-secondary small m-0 mt-1">Varian: Standard</p>
+                            <div class="fw-bold text-dark d-block d-md-none mt-2">Rp. 100.000</div>
+                        </div>
+                        <div
+                            class="col-12 col-md-auto d-flex flex-row flex-md-column justify-content-between align-items-center align-items-md-end ms-md-auto gap-2">
+                            <div class="fw-bold text-dark d-none d-md-block fs-5">Rp. 100.000</div>
+                            <div
+                                class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-md-end mt-md-2">
+                                <div class="d-flex gap-3 text-secondary fs-5">
+                                    <a href="#" class="text-secondary-emphasis" title="Tambah ke Favorit"><i
+                                            class="bi bi-heart"></i></a>
+                                    <a href="#" class="text-secondary-emphasis" title="Hapus dari Keranjang"><i
+                                            class="bi bi-trash3"></i></a>
+                                </div>
+                                <div class="input-group border border-secondary-subtle rounded-2 overflow-hidden"
+                                    style="width: 105px; height: 30px;">
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-minus-lg fs-7"></i></button>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center border-0 bg-transparent fw-bold p-0 text-dark small"
+                                        value="1" readonly>
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-plus-lg fs-7"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 py-3 border-bottom border-light-subtle align-items-center">
+                        <div class="col-auto d-flex align-items-center">
+                            <input class="form-check-input shadow-none border-secondary-subtle me-3" type="checkbox">
+                            <img src="img/product-4.jpg" alt="Colorful Stylish Shirt" class="rounded-3 object-fit-cover"
+                                style="width: 75px; height: 75px;">
+                        </div>
+                        <div class="col flex-grow-1 ps-md-3">
+                            <h6 class="text-dark fw-medium m-0 text-truncate-2">Colorful Stylish Shirt</h6>
+                            <p class="text-secondary small m-0 mt-1">Varian: Standard</p>
+                            <div class="fw-bold text-dark d-block d-md-none mt-2">Rp. 100.000</div>
+                        </div>
+                        <div
+                            class="col-12 col-md-auto d-flex flex-row flex-md-column justify-content-between align-items-center align-items-md-end ms-md-auto gap-2">
+                            <div class="fw-bold text-dark d-none d-md-block fs-5">Rp. 100.000</div>
+                            <div
+                                class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-md-end mt-md-2">
+                                <div class="d-flex gap-3 text-secondary fs-5">
+                                    <a href="#" class="text-secondary-emphasis" title="Tambah ke Favorit"><i
+                                            class="bi bi-heart"></i></a>
+                                    <a href="#" class="text-secondary-emphasis" title="Hapus dari Keranjang"><i
+                                            class="bi bi-trash3"></i></a>
+                                </div>
+                                <div class="input-group border border-secondary-subtle rounded-2 overflow-hidden"
+                                    style="width: 105px; height: 30px;">
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-minus-lg fs-7"></i></button>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center border-0 bg-transparent fw-bold p-0 text-dark small"
+                                        value="1" readonly>
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-plus-lg fs-7"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 pt-3 align-items-center">
+                        <div class="col-auto d-flex align-items-center">
+                            <input class="form-check-input shadow-none border-secondary-subtle me-3" type="checkbox">
+                            <img src="img/product-5.jpg" alt="Colorful Stylish Shirt" class="rounded-3 object-fit-cover"
+                                style="width: 75px; height: 75px;">
+                        </div>
+                        <div class="col flex-grow-1 ps-md-3">
+                            <h6 class="text-dark fw-medium m-0 text-truncate-2">Colorful Stylish Shirt</h6>
+                            <p class="text-secondary small m-0 mt-1">Varian: Standard</p>
+                            <div class="fw-bold text-dark d-block d-md-none mt-2">Rp. 100.000</div>
+                        </div>
+                        <div
+                            class="col-12 col-md-auto d-flex flex-row flex-md-column justify-content-between align-items-center align-items-md-end ms-md-auto gap-2">
+                            <div class="fw-bold text-dark d-none d-md-block fs-5">Rp. 100.000</div>
+                            <div
+                                class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-md-end mt-md-2">
+                                <div class="d-flex gap-3 text-secondary fs-5">
+                                    <a href="#" class="text-secondary-emphasis" title="Tambah ke Favorit"><i
+                                            class="bi bi-heart"></i></a>
+                                    <a href="#" class="text-secondary-emphasis" title="Hapus dari Keranjang"><i
+                                            class="bi bi-trash3"></i></a>
+                                </div>
+                                <div class="input-group border border-secondary-subtle rounded-2 overflow-hidden"
+                                    style="width: 105px; height: 30px;">
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-minus-lg fs-7"></i></button>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center border-0 bg-transparent fw-bold p-0 text-dark small"
+                                        value="1" readonly>
+                                    <button class="btn btn-sm btn-light border-0 bg-transparent px-2 text-secondary"
+                                        type="button"><i class="bi bi-plus-lg fs-7"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="card border border-light-subtle shadow-sm rounded-3 mb-3 bg-white">
+                    <div class="card-body p-3">
+                        <a href="#"
+                            class="d-flex align-items-center justify-content-between text-decoration-none text-dark">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-ticket-perforated text-danger fs-3"></i>
+                                <div>
+                                    <div class="fw-bold text-dark fs-6 line-height-sm">Makin hemat pakai promo</div>
+                                    <div class="text-secondary small mt-0.5">Ada kupon diskon & cashback menantimu</div>
+                                </div>
+                            </div>
+                            <i class="bi bi-chevron-right text-secondary fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card border border-light-subtle shadow-sm rounded-3 bg-white position-sticky"
+                    style="top: 100px; z-index: 10;">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-dark mb-4 fs-5">Cart Summary</h5>
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-secondary small fs-6">Subtotal (5 items)</span>
+                            <span class="text-dark fw-medium">$750</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-secondary small fs-6">Shipping</span>
+                            <span class="text-dark fw-medium">$10</span>
+                        </div>
+
+                        <hr class="text-black-50 my-3 opacity-25">
+
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <span class="fw-bold text-dark fs-5">Total</span>
+                            <span class="fw-bold text-dark fs-4">$760</span>
+                        </div>
+
+                        <button class="btn btn-danger w-100 fw-bold py-2.5 rounded-3 shadow-none border-0 fs-6">
+                            Proceed To Checkout
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Cart End -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-uppercase fw-bold mb-3 tracking-wider">Perahu Jeans</h5>
+                    <p class="text-white-50 small lh-base mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-sosmed-link" title="Instagram" aria-label="Ikuti Instagram Kami"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-sosmed-link" title="TikTok" aria-label="Ikuti TikTok Kami"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="#" class="footer-sosmed-link" title="Facebook" aria-label="Ikuti Facebook Kami"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-sosmed-link" title="Youtube" aria-label="Langganan Youtube Kami"><i
+                                class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Belanja</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Koleksi Mans</a></li>
+                        <li><a href="#">Koleksi Ladies</a></li>
+                        <li><a href="#">belt</a></li>
+                        <li><a href="#">Produk Lainnya</a></li>
+                        <li><a href="#" class="text-danger">Diskon & Promo</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Bantuan</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Hubungi Kami</a></li>
+                        <li><a href="#">Lacak Pesanan</a></li>
+                        <li><a href="#">Cara Pengembalian</a></li>
+                        <li><a href="#">FAQ (Tanya Jawab)</a></li>
+                        <li><a href="#">Panduan Ukuran</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Tetap Terhubung</h6>
+                    <p class="text-white-50 small mb-3">Dapatkan info produk terbaru dan voucher diskon eksklusif
+                        langsung di email kamu.</p>
+                    <form class="input-group footer-newsletter" role="presentation">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary"
+                            placeholder="Masukkan email kamu..." aria-label="Alamat email untuk newsletter">
+                        <button class="btn btn-light fw-medium px-3" type="button">Daftar</button>
+                    </form>
+                    <div class="mt-4">
+                        <p class="small text-white-50 mb-2">Metode Pembayaran Aman:</p>
+                        <div class="d-flex gap-2 text-white-50 fs-4">
+                            <i class="bi bi-credit-card" title="Transfer Bank / Kartu Kredit"></i>
+                            <i class="bi bi-wallet2" title="E-Wallet"></i>
+                            <i class="bi bi-truck" title="COD (Bayar di Tempat)"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary opacity-25 my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="small text-white-50 m-0">&copy; 2026 Perahu Jeans. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 small text-white-50">
+                        <a href="#" class="text-decoration-none text-white-50 footer-sublink">Syarat & Ketentuan</a>
+                        <a href="#" class="text-decoration-none text-white-50 footer-sublink">Kebijakan Privasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
